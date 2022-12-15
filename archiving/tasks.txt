@@ -1,0 +1,26 @@
+1)hamma linuxga kiradi, va quyida yuborilgan link orqali Linux.zip 
+degan faylni o'ziga ko'chirib oladi.  ichida faylla bor.  
+arxivlash va zichlashga o'shalardan foydalanasila.
+ gzip, bzip2, xz, zstd formatlarda arxivlash va arxivdan 
+ochish(-d,-f,-k,-r, optionlarni har birini ishlatish har bir komanda uchun ...(gz,bz2,xz,zstd)). 
+ Home papkayla arxiv degan papka ochasiz. uyerda  arxivlangan va 
+yechilgan degan papka ochasila, arxivlanagn va yechilgan degan 
+papkalarni ichida gzip bzip xz zstd zip rar degan papkalar ochasila. 
+ keyin sizga berilgan fayllardan foydalanib tar gzip bzip2 xz zsdt  formartlarga 
+fayllarni va papklalarni arxivlaysila tar orqali.( c, f, x, v, t, -C,   z, j, J, --zstd, 
+ optionlarni har bir arxiv turi uchun ishlatasila mos ravishda).  
+arxivlagan va zichlagan fayllarni arxivlangan degan papkani ichida silar 
+ochgan papkalarga tashaysila, arxivdan ochilgan fayllarni yechilgan degan 
+papka ichidagi papkalarga mor ravisda extract qilib  tashlaysila
+sistemaga user orqali ulaning va rootga o'ting. 2 xil xolda a) o'zgaruvchilarni saqlagan xolda. b) yangi o'zgaruvchilar bn
+2) 2 ta user yaratish (ism familiyasi, home direktoriyasi, shelni turi bash bilan, parol berish), user haqidagi malumotni kerakli fayldan topib ekranga chiqarish. Yangi yaratilgan userga komanda orqali o'tish
+3) yangi yaratilgan userlarni sistemaga kirishini cheklab qo'yish (natijani kerakli fayl orqali tekshirish) va cheklashni bekor qilish. Yaratilgan userni kommentariyasini o'zgartirish
+4) Yangi 3 ta guruh yaratish va 1 ta guruhni nomini o'zgartirish. Ushbu guruhga yangi yaratilgan userlarni qo'shish. Userlarni birini guruhdan o'chirish. guruhlarga oid bo'lgan faylni ekranga chiqaring. Siz yaratgan guruhni nomi bo'yicha filterlab ekranga chiqaring.
+5) hozrigi userni nomini ekranga chiqaring. id <username> komandasi orqali sistemadagi barcha userlarni id si va ular azo bo'lgan guruhlarini ekranga chiqaring 
+5) debian va centosda sudo o'rnatish va yangi yaratilgan userlarga admin  huquqini berish va sudo orqali komanda yozib sinab ko'rish
+6) Userlardan birini faqat userni o'chirish malumotlari saqlangan holda. 2-userni malumotlari bn yani home papkasi bn o'chirish. 
+7) Yangi yaratilgan guruhni o'chirib yuborish. 
+8) Siz hozirda ishlab turgan userni parolini o'zgartirish
+9) sistemada /bin/bash ishlatadigan userlar ro'yxatini filterlab chiqaring
+
+↓

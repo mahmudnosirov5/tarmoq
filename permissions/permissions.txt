@@ -1,0 +1,46 @@
+touch myfile.sh
+ls -l
+chmod 774 myfile.sh
+printf "echo 'Assalamu alaikum, $USER' \ndate" > myfile.sh
+./myfile.sh
+chmod 555 myfile.sh 
+ls -l /etc
+mkdir newfolder 
+chmod 666 newfolder
+sudo adduser user1
+sudo adduser user2
+sudo adduser user3
+sudo groupadd tarmoqchilar
+sudo usermod -aG tarmoqchilar user1 
+sudo usermod -aG tarmoqchilar user2
+sudo usermod -aG tarmoqchilar user3
+sudo chown mahmud:tarmoqchilar myfile.sh
+chmod 770 myfile.sh
+sudo adduser test1
+sudo chown test1 newfolder
+sudo chmod 700 newfolder
+touch file1 file2
+chmod u=rwx,g=rx,o=r file1
+chmod 754 file2
+mkdir myfolder && cd myfolder && touch file1 file2 file3
+chmod 774 ./*
+sudo chown mahmud:tarmoqchilar ./*
+touch file4 file5
+chmod u=rwx,g=rwx,o=rwx file1
+chmod u=rwx,g=rx,o=rwx file2
+chmod u=rwx,g=rw,o=rx file3
+chmod u=rw,g=rw,o=r file4
+chmod u=rwx,g=w,o=w file5
+touch file6 file7 file8 file9 file10
+chmod 660 file65 
+chmod 660 file7
+chmod 711 file8
+chmod 455 file9
+chmod 744 file10
+touch linux1 linux2 linux3
+sudo chown mahmud linux1
+sudo chgrp tarmoqchilar linux2
+sudo chown mahmud:tarmoqchilar linux3
+umask
+umask 711
+history

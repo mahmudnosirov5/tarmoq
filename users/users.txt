@@ -1,0 +1,25 @@
+sudo adduser user1
+sudo adduser user2 
+sudo adduser user3
+tail -3 /etc/passwd
+sudo passwd -l user1
+sudo tail -10 /etc/shadow  
+sudo passwd -u user1
+sudo usermod -c "Comment" user1
+sudo addgroup group1
+sudo addgroup group2
+sudo addgroup group3
+sudo groupmod -n group22 group2
+tail -5 /etc/group
+sudo usermod -aG group1 user1
+sudo usermod -aG group1 user2
+sudo usermod -aG group1 user3
+sudo gpasswd -d user1 group1
+cat /etc/group | grep group1
+id mahmud
+cat /etc/passwd
+sudo userdel user1
+sudo userdel -r user2
+sudo delgroup group1
+sudo passwd user3
+cat /etc/passwd | grep /bin/bash 

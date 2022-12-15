@@ -1,0 +1,24 @@
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1--o7ouG6rru2ug8sDzJZ1C_huXPYSqy0' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1--o7ouG6rru2ug8sDzJZ1C_huXPYSqy0" -O Linux.zip && rm -rf /tmp/cookies.txt
+unzip Linux.zip -d .
+mkdir arxiv && cd arxiv 
+mkdir arxivlangan yechilgan
+cd arxivlangan && mkdir gzip bzip2 xz zstd zip rar 
+cd ../yechilgan && mkdir gzip bzip2 xz zstd zip rar
+cd ../../ && tree arxiv 
+tar -cJvf arxiv/arxivlangan/xz/Linux.tar.xz Linux
+tar -cjvf arxiv/arxivlangan/bzip2/Linux.tar.bz Linux
+tar -czvf arxiv/arxivlangan/gzip/Linux.tar.gz Linux
+tar -cvf Linux.tar Linux
+zstd Linux.tar -o arxiv/arxivlangan/zstd/Linux.tar.zst
+zip -r arxiv/arxivlangan/zip/Linux.zip Linux
+rar a arxiv/arxivlangan/rar/Linux.rar Linux 
+tar -C "arxiv/yechilgan/bzip2/" -xjvf arxiv/arxivlangan/bzip2/Linux.tar.bz
+tar -C "arxiv/yechilgan/xz/" -xJvf arxiv/arxivlangan/xz/Linux.tar.xz
+tar -C "arxiv/yechilgan/gzip/" -xzvf arxiv/arxivlangan/gzip/Linux.tar.gz
+unzstd arxiv/arxivlangan/zstd/Linux.tar.zst -o arxiv/yechilgan/zstd/Linux.tar
+tar -C "arxiv/yechilgan/zstd/" -xvf arxiv/yechilgan/zstd/Linux.tar
+rm arxiv/yechilgan/zstd/Linux.tar
+unzip arxiv/arxivlangan/zip/Linux.zip -d arxiv/yechilgan/zip/
+mkdir arxiv/yechilgan/rar/Linux
+unrar e arxiv/arxivlangan/rar/Linux.rar arxiv/yechilgan/rar/Linux/
+tree arxiv
